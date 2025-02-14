@@ -1,6 +1,5 @@
 package com.example.rabotablyat
 
-import FlowerListActivity
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -18,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.rabotablyat.Functional.FlowerListActivity
 import com.example.rabotablyat.ui.theme.RabotaBlyatTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
                     MainScreen(
                         modifier = Modifier.padding(innerPadding),
                         onNavigateToFlowerList = {
-                            // Переход к экрану списка цветов
+
                             startActivity(Intent(this, FlowerListActivity::class.java))
                         }
                     )
